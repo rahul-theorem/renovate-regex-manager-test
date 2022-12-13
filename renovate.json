@@ -1,6 +1,9 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
+  "regexManagers": [
+    {
+      "fileMatch": ["config.yaml"],
+      "matchStrings": ["\\ \\ -\\ (?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)\\n"],
+      "datasourceTemplate": "docker"
+    }
   ]
 }
