@@ -5,5 +5,12 @@
       "matchStrings": ["\\s\\s-\\s(?<depName>\\S*):(?<currentValue>\\S*)\\n"],
       "datasourceTemplate": "docker"
     }
+  ],
+  "packageRules": [
+    {
+      "description": "Group image updates",
+      "matchPaths": ["config.yaml"],
+      "groupName": "All image mirroring changes"
+    }
   ]
 }
