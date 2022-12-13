@@ -2,7 +2,7 @@
   "regexManagers": [
     {
       "fileMatch": ["config.yaml"],
-      "matchStrings": ["\\ \\ -\\ (?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)\\n"],
+      "matchStrings": ["-\\s(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)\\n"],
       "datasourceTemplate": "docker"
     }
   ]
