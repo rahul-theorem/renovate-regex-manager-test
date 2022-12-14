@@ -1,10 +1,10 @@
 aws_account_id: 000000000000 
 aws_region: us-west-1
 images:
-  - ghcr.io/fluxcd/helm-controller:v0.22.2
-  - crossplane/crossplane:v1.9.1
+  - ghcr.io/fluxcd/helm-controller:v0.27.0
+  - crossplane/crossplane:v1.10.1
   - gcr.io/kubecost1/cost-model:prod-1.98.0
-  - k8s.gcr.io/pause:3.5
-  - registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.5.0
-  - public.ecr.aws/ebs-csi-driver/aws-ebs-csi-driver:v1.10.0
-  - quay.io/argoproj/argoexec:v3.4.3
+  - k8s.gcr.io/pause:3.9
+  - registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.7.0
+  - public.ecr.aws/ebs-csi-driver/aws-ebs-csi-driver:v1.13.0
+  - quay.io/argoproj/argoexec:v3.4.4
